@@ -3,6 +3,8 @@
 <!-- End Header -->
 ---
 
+(pause: 2)
+
 <!-- Start Content  -->
 ```
 ```

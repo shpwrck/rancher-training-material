@@ -10,7 +10,16 @@ jobs:
         source-path: k3s/script/source.md
         github-token: ${{ secrets.GITHUB_TOKEN }}
         api-key: ${{ secrets.NARAKEET_API_KEY }}
+        result-file: k3s/output.zip
     - uses: actions/upload-artifact@v1
       with:
         name: video
         path: "${{ steps.video.outputs.video-file }}"
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fnkr/github-action-ghr@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      env:
+        GHR_PATH: /k3s/output.zip
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

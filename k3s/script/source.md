@@ -1,7 +1,10 @@
 ---
 voice: Jeff
+transition: pixelize
 background: dreams.mp3 0.5
 ---
+
+(pause: 2)
 
 ```
 k3s
