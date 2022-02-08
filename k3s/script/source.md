@@ -46,6 +46,4 @@ When would I use k3s?
 You've heard me say that `k3s` is lightweight. The small size and requirements of `k3s` make it ideal for edge devices. It will work on ARM and x-eighty-six architectures alike.
 <!-- End Script --> 
 
-(pause: 2)
-
 ---

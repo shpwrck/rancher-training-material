@@ -13,5 +13,5 @@ jobs:
     with:
       domain: fleet
     secrets:
-      narakeet_token: ${{ secrets.NARAKEET_API_KEY }}
-      github_token: ${{ secrets.GITHUB_TOKEN }}
+      nara-token: ${{ secrets.NARAKEET_API_KEY }}
+      gith-token: ${{ secrets.GITHUB_TOKEN }}
