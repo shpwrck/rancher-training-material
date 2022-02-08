@@ -6,9 +6,9 @@ on:
         required: true
         type: string
     secrets:
-      narakeet_token:
+      nara-token:
         required: true
-      github_token:
+      gith-token:
         required: true
 jobs:
   make_video:
@@ -18,8 +18,8 @@ jobs:
       id: video
       with:
         source-path: ${{ inputs.domain }}/script/source.md
-        github-token: ${{ secrets.github_token }}
-        api-key: ${{ secrets.narakeet_token }}
+        github-token: ${{ secrets.gith-token }}
+        api-key: ${{ secrets.nara-token }}
     - uses: actions/upload-artifact@v1
       with:
         name: video
@@ -28,4 +28,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       env:
         GHR_PATH: "${{ steps.video.outputs.video-file }}"
-        GITHUB_TOKEN: ${{ secrets.github_token }}
+        GITHUB_TOKEN: ${{ secrets.gith-token }}
