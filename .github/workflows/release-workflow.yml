@@ -1,0 +1,30 @@
+name: Release Videos
+on:
+  push:
+    branches: 
+    - master
+    tags:
+    - v**
+jobs:
+  make_video:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        domain: [k3s, rancher, longhorn, fleet]
+    steps:
+    - uses: narakeet/build-video-github-action@v1.0.2
+      id: video
+      with:
+        source-path: ${{ matrix.domain }}/script/source.md
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        api-key: ${{ secrets.NARAKEET_API_KEY }}
+        result-file: ${{ matrix.domain }}.mp4
+    - uses: actions/upload-artifact@v1
+      with:
+        name: video
+        path: "${{ steps.video.outputs.video-file }}"
+    - uses: fnkr/github-action-ghr@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      env:
+        GHR_PATH: "${{ steps.video.outputs.video-file }}"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

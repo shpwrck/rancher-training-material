@@ -9,7 +9,7 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    uses: shpwrck/rancher-training-material/.github/workflows/workflow.yml@master
+    uses: shpwrck/rancher-training-material/.github/workflows/build-workflow.yml@master
     with:
       domain: rancher
     secrets:
