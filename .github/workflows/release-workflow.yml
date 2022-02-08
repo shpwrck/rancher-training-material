@@ -4,7 +4,7 @@ on:
     tags:
     - v**
 jobs:
-  make_video:
+  make_release_video:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,10 +17,6 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         api-key: ${{ secrets.NARAKEET_API_KEY }}
         result-file: ${{ matrix.domain }}.mp4
-    - uses: actions/upload-artifact@v1
-      with:
-        name: video
-        path: "${{ steps.video.outputs.video-file }}"
     - uses: fnkr/github-action-ghr@v1
       if: startsWith(github.ref, 'refs/tags/')
       env:
