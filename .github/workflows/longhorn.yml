@@ -1,0 +1,17 @@
+name: Make longhorn Video
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'longhorn/**'
+
+jobs:
+  call-workflow-passing-data:
+    uses: shpwrck/rancher-training-material/.github/workflows/workflow.yml@master
+    with:
+      domain: longhorn
+    secrets:
+      narakeet_token: ${{ secrets.NARAKEET_API_KEY }}
+      github_token: ${{ secrets.GITHUB_TOKEN }}

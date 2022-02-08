@@ -1,0 +1,17 @@
+name: Make k3s Video
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'k3s/**'
+
+jobs:  
+  call-workflow-passing-data:
+    uses: shpwrck/rancher-training-material/.github/workflows/workflow.yml@master
+    with:
+      domain: k3s
+    secrets:
+      narakeet_token: ${{ secrets.NARAKEET_API_KEY }}
+      github_token: ${{ secrets.GITHUB_TOKEN }}

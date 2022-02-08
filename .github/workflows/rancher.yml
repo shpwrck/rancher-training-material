@@ -1,0 +1,17 @@
+name: Make rancher Video
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'rancher/**'
+
+jobs:
+  call-workflow-passing-data:
+    uses: shpwrck/rancher-training-material/.github/workflows/workflow.yml@master
+    with:
+      domain: rancher
+    secrets:
+      narakeet_token: ${{ secrets.NARAKEET_API_KEY }}
+      github_token: ${{ secrets.GITHUB_TOKEN }}

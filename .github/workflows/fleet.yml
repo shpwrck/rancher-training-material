@@ -1,0 +1,17 @@
+name: Make fleet Video
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'fleet/**'
+
+jobs:
+  call-workflow-passing-data:
+    uses: shpwrck/rancher-training-material/.github/workflows/workflow.yml@master
+    with:
+      domain: fleet
+    secrets:
+      narakeet_token: ${{ secrets.NARAKEET_API_KEY }}
+      github_token: ${{ secrets.GITHUB_TOKEN }}

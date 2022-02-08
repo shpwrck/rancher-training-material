@@ -1,21 +1,25 @@
 name: Make videos
 on:
-  push:
-    branches:
-    - master
+  workflow_call:
+    inputs:
+      domain:
+        required: true
+        type: string
+    secrets:
+      narakeet_token:
+        required: true
+      github_token:
+        required: true
 jobs:
-  build:
+  make_video:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        domain: [k3s, longhorn, fleet, rancher]
     steps:
     - uses: narakeet/build-video-github-action@v1.0.2
       id: video
       with:
-        source-path: ${{ matrix.domain }}/script/source.md
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        api-key: ${{ secrets.NARAKEET_API_KEY }}
+        source-path: ${{ inputs.domain }}/script/source.md
+        github-token: ${{ secrets.github_token }}
+        api-key: ${{ secrets.narakeet_token }}
     - uses: actions/upload-artifact@v1
       with:
         name: video
@@ -24,4 +28,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       env:
         GHR_PATH: "${{ steps.video.outputs.video-file }}"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.github_token }}
