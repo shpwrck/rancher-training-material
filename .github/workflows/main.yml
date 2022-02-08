@@ -1,0 +1,16 @@
+name: Make videos
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: narakeet/build-video-github-action@v1.0.2
+      id: video
+      with:
+        source-path: k3s/script/source.md
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        api-key: ${{ secrets.NARAKEET_API_KEY }}
+    - uses: actions/upload-artifact@v1
+      with:
+        name: video
+        path: "${{ steps.video.outputs.video-file }}"
