@@ -1,5 +1,5 @@
 # TODO
 
 * Add Phoenetic Replacement
-* Add Template
-* Switch Voice
+* Improve ReadME
+* Improve GitHubActions

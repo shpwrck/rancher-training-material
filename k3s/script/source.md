@@ -1,5 +1,6 @@
 ---
 voice: Jeff
+background: dreams.mp3 0.5
 ---
 
 ```
@@ -18,7 +19,7 @@ What is k3s?
 ```
 
 <!-- Start Script --> 
-How has `k3s` reduced the complexity of `k8s` you ask? Well first and foremost, `k3s` has consolidated the distributed components of `k8s` into a single leightweight binary.
+How has `k3s` reduced the complexity of `k8s` you ask? Well first and foremost, `k3s` has consolidated the distributed components of `k8s` into a single lightweight binary.
 <!-- End Script --> 
 
 ---
