@@ -2,7 +2,7 @@
 voice: Jeff
 theme: light
 transition: pixelize
-background: dreams.mp3 0.5
+background: dreams.mp3 0.2
 ---
 
 (pause: 2)
