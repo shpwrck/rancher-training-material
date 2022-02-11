@@ -19,6 +19,6 @@ Rancher can be used to run `k8s` command line operations.
 
 ---
 
-![](https://github.com/shpwrck/rancher-ui-video-generation/releases/download/v0.0.1/test_canvas_chromium.webm)
+![](https://github.com/shpwrck/rancher-ui-video-generation/releases/download/v0.0.1/test_canvas_chromium.mp4)
 
 ---
