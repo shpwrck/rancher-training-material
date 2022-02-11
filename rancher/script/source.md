@@ -47,8 +47,12 @@ Click the shell icon. Wait until the terminal loads. Then type any `k8s` command
 Try running some commands on your own environment.
 ```
 
+![](background.png)
+
 <!-- Start Script -->
-Try running some commands on your own environment.
+Now try running some commands on your own environment.
 <!-- End Script -->
+
+(pause: 2)
 
 ---
