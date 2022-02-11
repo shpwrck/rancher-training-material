@@ -38,7 +38,17 @@ Locate the local cluster
 ![10-21](test_canvas_chromium.mp4)
 
 <!-- Start Script -->
-Click the shell icon. Wait until the terminal loads. Then type any `k8s` command.
+Click the shell icon. Wait until the terminal loads. Then type any `k8s` command. In this video we are checking for all running pods in the local cluster.
+<!-- End Script -->
+
+---
+
+```
+Try running some commands on your own environment.
+```
+
+<!-- Start Script -->
+Try running some commands on your own environment.
 <!-- End Script -->
 
 ---
