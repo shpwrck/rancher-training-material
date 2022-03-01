@@ -102,3 +102,4 @@ Users can install `RKE2` with an easy-to-use installation script and configurati
 `K3s` includes Traefik as the ingress controller and by default uses an embedded SQLite as its datastore but can use an external etcd, PostGres, or Mysql.
 `K3s` also includes Klipper-lb as an embedded service load balancer provider and Flannel is the default CNI plugin.
 <!-- End Script -->
+
