@@ -1,0 +1,17 @@
+name: Make rancher Video
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'kubernetes-distributions/**'
+
+jobs:
+  call-workflow-passing-data:
+    uses: shpwrck/rancher-training-material/.github/workflows/build-workflow.yml@master
+    with:
+      domain: kubernetes-distributions
+    secrets:
+      nara-token: ${{ secrets.NARAKEET_API_KEY }}
+      gith-token: ${{ secrets.GITHUB_TOKEN }}
