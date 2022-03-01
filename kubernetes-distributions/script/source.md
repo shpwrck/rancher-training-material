@@ -33,7 +33,7 @@ Like a Linux distribution that include a kernel, shell, tools and more, a Kubern
 
 ![](rke-rke2-k3s.jpeg)
 <!-- Start Script -->
-Soosa offers three Kubernetes distributions: Rancher Kubernetes Engine (`RKE`), `RKE2` and `K3S`.
+Soosa offers three Kubernetes distributions: Rancher Kubernetes Engine (`RKE`), `RKE2`, and `K3S`.
 All three distributions are CNCF Certified meaning that all three distributions support the required APIs and there is no vendor lock-in which means workloads can easily migrate from one `CNCF` Certified Kubernetes cluster to another.
 In addition, all three Soosa Kubernetes distributions are easy to install, can be deployed via Terraform, have zero-downtime upgrades and can be installed in air-gap environments.
 
@@ -70,8 +70,8 @@ Rancher Kubernetes Engine or `RKE`
 
 ![](rke-2.jpeg)
 <!-- Start Script -->
-`RKE` is a container based Kubernetes distribution that uses Docker but is not affected of the Kubernetes removal of dockershim in Kubernetes v1.24.
-`RKE` uses cri-dockerd which is a shim to use the Docker engine.
+`RKE` is a container based Kubernetes distribution that uses Docker but is not affected by the Kubernetes removal of dockershim in Kubernetes v1.24.
+`RKE` uses `cri`-docker`d` which is a shim to use the Docker engine.
 `RKE` is installed via a single binary and can use a single yaml configuration file to setup a cluster.
 `RKE` requires `SSH` access to the machines of the cluster.
 Since `RKE` is built using containers, upgrades are easy with the option to roll back.
@@ -88,11 +88,11 @@ Since `RKE` is built using containers, upgrades are easy with the option to roll
 ![](rke2-2.jpeg)
 <!-- Start Script -->
 `RKE2` is a hardened and FIPS-enabled Kubernetes distribution focused on security and compliance.
-`RKE2` targets standard risk management frameworks and provides opetions to pass the Center for Internet Security (`CIS`) Kubernetes benchmarks.
+`RKE2` targets standard risk management frameworks and provides options to pass the Center for Internet Security (`CIS`) Kubernetes benchmarks.
 `RKE2` enables FIPS 140-2 compliance which means `RKE2` is built with US Government approved FIPS validated cryptographic libraries.
 Users can install `RKE2` with an easy-to-use installation script and configuration file.
 `RKE2` uses container-d as its container runtime.
-`RKE2` uses NGINX as the default ingress controller and Canal is the default `CNI` plugin.
+`RKE2` uses NGINX as the default ingress controller and Canal as the default `CNI` plugin.
 <!-- End Script -->
 ---
 
