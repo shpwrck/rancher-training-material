@@ -19,19 +19,19 @@ Vanilla Kubernetes
 <!-- End Script -->
 ---
 
-![](vanilla-k8s.jpg)
+![](vanilla-k8s.jpeg)
 <!-- Start Script -->
 Provisioning an upstream Kubernetes cluster straight from source code or using kubeadm, a tool from upstream to create clusters, is difficult and does not include all the requirements for a functioning cluster like a CNI plugin to implement the Kubernetes networking model. Installing from source code or kubeadm is often referred to as "vanilla" Kubernetes.
 <!-- End Script -->
 ---
 
-![](k8s-distributions.jpg)
+![](k8s-distributions.jpeg)
 <!-- Start Script -->
 Like a Linux distribution that include a kernel, shell, tools and more, a Kubernetes distribution makes installing (and upgrading) a Kubernetes cluster easier and includes all the requirements for a functioning cluster and add-ons.
 <!-- End Script -->
 ---
 
-![](rke-rk2-k3s.jpg)
+![](rke-rk2-k3s.jpeg)
 <!-- Start Script -->
 SUSE offers three Kubernetes distributions: Rancher Kubernetes Engine (RKE), RKE2 and K3s.
 All three distributions are CNCF Certified meaning that all three distributions support the required APIs and there is no vendor lock-in which means workloads can easily migrate from one CNCF Certified Kubernetes cluster to another.
@@ -62,13 +62,13 @@ SUSE's Kubernetes Distributions
 ![](background.png)
 ---
 
-![](rke-1.jpg)
+![](rke-1.jpeg)
 <!-- Start Script -->
 Rancher Kubernetes Engine or RKE
 <!-- End Script -->
 ---
 
-![](rke-2.jpg)
+![](rke-2.jpeg)
 <!-- Start Script -->
 `RKE` is a container based Kubernetes distribution that uses Docker but is not affected of the Kubernetes removal of dockershim in Kubernetes v1.24.
 `RKE` uses cri-dockerd which is a shim to use the Docker engine.
@@ -79,13 +79,13 @@ Since `RKE` is built using containers, upgrades are easy with the option to roll
 <!-- End Script -->
 ---
 
-![](rke2-1.jpg)
+![](rke2-1.jpeg)
 <!-- Start Script -->
 `RKE2` formerly known as `RKE` Government is SUSE's next-generation Kubernetes distribution.
 <!-- End Script -->
 ---
 
-![](rke2-2.jpg)
+![](rke2-2.jpeg)
 <!-- Start Script -->
 `RKE2` is a hardened and FIPS-enabled Kubernetes distribution focused on security and compliance.
 `RKE2` targets standard risk management frameworks and provides opetions to pass the Center for Internet Security (CIS) Kubernetes benchmarks.
@@ -96,13 +96,13 @@ Users can install `RKE2` with an easy-to-use installation script and configurati
 <!-- End Script -->
 ---
 
-![](k3s-1.jpg)
+![](k3s-1.jpeg)
 <!-- Start Script -->
 `K3s`
 <!-- End Script -->
 ---
 
-![](k3s-2.jpg)
+![](k3s-2.jpeg)
 <!-- Start Script -->
 `K3s` is a lightweight, production-ready Kubernetes distribution that Rancher donated to the CNCF.
 `K3s` is geared towards resource constrained environments and native ARM support -- perfect for EDGE and IoT environments.
