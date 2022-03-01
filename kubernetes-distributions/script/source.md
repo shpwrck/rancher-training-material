@@ -17,16 +17,19 @@ Kubernetes Distributions
 <!-- Start Script -->
 Vanilla Kubernetes
 <!-- End Script -->
+---
 
 ![](vanilla-k8s.jpg)
 <!-- Start Script -->
 Provisioning an upstream Kubernetes cluster straight from source code or using kubeadm, a tool from upstream to create clusters, is difficult and does not include all the requirements for a functioning cluster like a CNI plugin to implement the Kubernetes networking model. Installing from source code or kubeadm is often referred to as "vanilla" Kubernetes.
 <!-- End Script -->
+---
 
 ![](k8s-distributions.jpg)
 <!-- Start Script -->
 Like a Linux distribution that include a kernel, shell, tools and more, a Kubernetes distribution makes installing (and upgrading) a Kubernetes cluster easier and includes all the requirements for a functioning cluster and add-ons.
 <!-- End Script -->
+---
 
 ![](rke-rk2-k3s.jpg)
 <!-- Start Script -->
@@ -41,7 +44,7 @@ RKE, RKE2, K3s include all the requirements and more for a functioning Kubernete
 - an ingress controller for functioning ingress resources
 - declarative configuration for reliable and repeatable deployments
 <!-- End Script -->
-
+---
 
 ```
 SUSE's Kubernetes Distributions
@@ -51,16 +54,19 @@ SUSE's Kubernetes Distributions
 <!-- Start Script -->
 Let's look into three Kubernetes distributions that SUSE offers
 <!-- End Script -->
+---
 
 ```
 SUSE's Kubernetes Distributions
 ```
 ![](background.png)
+---
 
 ![](rke-1.jpg)
 <!-- Start Script -->
 Rancher Kubernetes Engine or RKE
 <!-- End Script -->
+---
 
 ![](rke-2.jpg)
 <!-- Start Script -->
@@ -71,11 +77,13 @@ Rancher Kubernetes Engine or RKE
 Since `RKE` is built using containers, upgrades are easy with the option to roll back.
 `RKE` ships with NGINX as the default ingress controller and Canal as the default CNI plugin.
 <!-- End Script -->
+---
 
 ![](rke2-1.jpg)
 <!-- Start Script -->
 `RKE2` formerly known as `RKE` Government is SUSE's next-generation Kubernetes distribution.
 <!-- End Script -->
+---
 
 ![](rke2-2.jpg)
 <!-- Start Script -->
@@ -86,11 +94,13 @@ Users can install `RKE2` with an easy-to-use installation script and configurati
 `RKE2` uses container-d as its container runtime.
 `RKE2` uses NGINX as the default ingress controller and Canal is the default CNI plugin.
 <!-- End Script -->
+---
 
 ![](k3s-1.jpg)
 <!-- Start Script -->
 `K3s`
 <!-- End Script -->
+---
 
 ![](k3s-2.jpg)
 <!-- Start Script -->
@@ -102,4 +112,4 @@ Users can install `RKE2` with an easy-to-use installation script and configurati
 `K3s` includes Traefik as the ingress controller and by default uses an embedded SQLite as its datastore but can use an external etcd, PostGres, or Mysql.
 `K3s` also includes Klipper-lb as an embedded service load balancer provider and Flannel is the default CNI plugin.
 <!-- End Script -->
-
+---
