@@ -31,7 +31,7 @@ Like a Linux distribution that include a kernel, shell, tools and more, a Kubern
 <!-- End Script -->
 ---
 
-![](rke-rk2-k3s.jpeg)
+![](rke-rke2-k3s.jpeg)
 <!-- Start Script -->
 SUSE offers three Kubernetes distributions: Rancher Kubernetes Engine (RKE), RKE2 and K3s.
 All three distributions are CNCF Certified meaning that all three distributions support the required APIs and there is no vendor lock-in which means workloads can easily migrate from one CNCF Certified Kubernetes cluster to another.
