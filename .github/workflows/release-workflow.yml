@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        domain: [k3s, rancher, longhorn, fleet]
+        domain: [k3s, rancher, longhorn, fleet, cluster-management]
     steps:
     - uses: narakeet/build-video-github-action@v1.0.2
       id: video
