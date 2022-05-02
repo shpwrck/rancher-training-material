@@ -11,7 +11,7 @@ background: dreams.mp3 0.05
 Rancher Cluster Management
 ```
 
-![](background.pnd)
+![](background.png)
 
 <!-- Start Script --> 
 Rancher provides a graphical user interface to assist in cluster management tasks.
