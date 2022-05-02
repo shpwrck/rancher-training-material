@@ -58,6 +58,8 @@ And finally, we can see that Rancher handles the full lifecycle when it deletes 
 But you aren't limited to the `UI`. You can upload resources in their origianl YAML, interact with the included shell environment, or download the cluster configuration file to interact in a terminal of your choosing.
 <!-- End Script -->
 
+---
+
 ```
 Explore the UI!
 ```
