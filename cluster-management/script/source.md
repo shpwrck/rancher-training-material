@@ -37,7 +37,7 @@ The Rancher `UI` presents basic information for every cluster such as Pod, Core,
   sync: freeze)
 
 <!-- Start Script -->
-Through Rancher you can create a workload such as a deployment through the UI. Instead of learning each resource's specification, the Rancher `UI` presents an easy to use and organized user experience.
+Through Rancher you can create a workload such as a deployment through the UI. Instead of learning each resource's specification, the Rancher `UI` presents an easy to use and organized user experience. This example is a basic nginx workload with a service exposing port 80.
 <!-- End Script -->
 
 ---
@@ -70,7 +70,7 @@ And finally, we can see that Rancher handles the full lifecycle when it deletes 
   sync: freeze)
 
 <!-- Start Script -->
-But you aren't limited to the `UI`. You can upload resources in their origianl YAML, interact with the included shell environment, or download the cluster configuration file to interact in a terminal of your choosing.
+But you aren't limited to the `UI`. You can upload resources in their original YAML, interact with the included shell environment, or download the cluster configuration file to interact in a terminal of your choosing.
 <!-- End Script -->
 
 ---
