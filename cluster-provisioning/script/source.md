@@ -27,6 +27,7 @@ Rancher allows you to create and import clusters.
 <!-- Start Script -->
 Importing a cluster is the process of installing an agent on a cncf certified distribution of kubernetes.
 This mode allows you to apply role based access policy and fleet workloads to the imported cluster.
+Once you have generated a cluster in Rancher, then simply execute the copied command in your local shell.
 <!-- End Script -->
 
 ---
@@ -37,14 +38,14 @@ This mode allows you to apply role based access policy and fleet workloads to th
   sync: freeze)
 
 <!-- Start Script -->
-If you do not have a cluster already but you do have servers, then you can create a fully customizeable RKE, RKE2, or K3S cluster whose lifecycle can be managed through Rancher.
+If you do not have a cluster already but you do have servers, then you can create a fully customizeable RKE, RKE2, or K3S cluster whose lifecycle can be managed through Rancher. With this mode you can manage the version, CNI, security, and much more.
 <!-- End Script -->
 
 ---
 
 (video:
   file: node-driver-cluster.mp4
-  segment: 00:06 - 00:37
+  segment: 00:07 - 00:44
   sync: freeze)
 
 <!-- Start Script -->
@@ -60,7 +61,7 @@ The node driver option supports multiple hypervisors both in the cloud and on pr
   sync: freeze)
 
 <!-- Start Script -->
-Finally, if you'd like take advantage of the managed kubernetes offerings of AWS, Azure, or GCP, then you can use operator based provisioning.
+Finally, if you'd like to take advantage of the managed kubernetes offerings of AWS, Azure, or GCP, then you can use operator based provisioning.
 With this mode Rancher will declaratively maintain the state of EKS, AKS, or GKE.
 <!-- End Script -->
 
