@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'fleet/**'
+      - 'fleet-old/**'
 
 jobs:
   call-workflow-passing-data:
