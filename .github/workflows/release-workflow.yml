@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        domain: [cluster-management, cluster-provisioning]
+        domain: [cluster-management, cluster-provisioning, iam-rbac]
     steps:
     - uses: narakeet/build-video-github-action@v1.0.2
       id: video
