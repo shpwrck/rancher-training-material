@@ -3,6 +3,7 @@ voice: Jeff
 theme: light
 transition: pixelize
 background: dreams.mp3 0.05
+size: 2560x1440
 ---
 
 (pause: 2)
