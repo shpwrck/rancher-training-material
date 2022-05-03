@@ -57,7 +57,7 @@ The node driver option supports multiple hypervisors both in the cloud and on pr
 
 (video:
   file: operator-cluster.mp4
-  segment: 00:06 - 00:48
+  segment: 00:05 - 00:47
   sync: freeze)
 
 <!-- Start Script -->
