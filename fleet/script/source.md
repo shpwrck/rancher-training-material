@@ -9,20 +9,19 @@ size: 2560x1440
 (pause: 2)
 
 ```
-Rancher Continuous Integration
-(Fleet)
+Rancher Fleet
 ```
 
 ![](background.png)
 
 <!-- Start Script -->
-Rancher includes a continuous deivery tool called Fleet that helps manage Kubernetes resources at scale with git ops.
+Rancher includes a continuous delivery tool called Fleet that helps manage Kubernetes resources at scale with git ops.
 Put simply, fleet allows you to maintain your clusters and cluster resources by watching the contents of a git repository.
 <!-- End Script -->
 
 ---
 
-```
+```md
 Git Repo Components:
 
 * URL & Branch Name
